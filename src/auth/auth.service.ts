@@ -10,7 +10,7 @@ export class AuthService {
   constructor(
     private readonly usersService: UsersService,
     private readonly jwtService: JwtService,
-  ) {}
+  ) { }
 
   async register(createUserDto: CreateUserDto) {
     // Hash da senha
@@ -39,7 +39,7 @@ export class AuthService {
       throw new UnauthorizedException('Senha inválida');
     }
 
-    const payload = { id: user.id, email: user.email };
+    const payload = { id: user.id, email: user.email, role: user.role };
     return this.jwtService.sign(payload);
   }
 

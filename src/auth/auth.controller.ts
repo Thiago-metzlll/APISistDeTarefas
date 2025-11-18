@@ -3,7 +3,7 @@ import type { Response } from 'express';
 import { AuthService } from './auth.service';
 import { CreateUserDto } from './dto/createUser.dto';
 import { LoginUserDto } from './dto/loginUser.dto';
-import { JwtAuthGuard } from './guard/guard';
+import { JwtAuthGuard } from './guards/guard';
 
 
 

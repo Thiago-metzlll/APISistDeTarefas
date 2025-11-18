@@ -1,7 +1,9 @@
-// src/users/models/user.model.ts
+import { Role } from './role.enum'
 export interface User {
   id: number;
   name: string;
   email: string;
   password: string;
+  role: Role;   // <—— importantíssimo
+
 }
