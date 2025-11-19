@@ -12,7 +12,7 @@ import { JwtStrategy } from './strategy/jwt.strategy';
     UsersModule,
     PassportModule,
     JwtModule.register({
-      secret: 'SUA_CHAVE_SECRETA', // substitua por variável de ambiente em produção
+      secret: 'SUA_CHAVE_SECRETA', 
       signOptions: { expiresIn: '1h' }, // token expira em 1 hora
     }),
   ],

@@ -16,9 +16,7 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
   }
 
   async validate(payload: any) {
-    // ⚠ MUITO IMPORTANTE:
-    // payload já contém { id, email, role }
-    // mas você está removendo o role aqui!
+
     return this.authService.validateUser(payload.id);
   }
 }

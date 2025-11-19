@@ -4,5 +4,5 @@ export class Task {
   id: number;
   title: string;
   done: boolean;
-  role: Role;  // quem pode ver e atualizar
+  role: Role;  
 }

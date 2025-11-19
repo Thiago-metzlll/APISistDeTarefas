@@ -14,11 +14,11 @@ export class RolesGuard implements CanActivate {
       context.getClass(),
     ]);
 
-    if (!requiredRoles) return true; // sem roles exigidas, liberado
+    if (!requiredRoles) return true; 
 
     const { user } = context.switchToHttp().getRequest();
 
-    // ⚡ Se você usa um cargo por usuário:
+    
     return requiredRoles.includes(user.role);
   }
 }

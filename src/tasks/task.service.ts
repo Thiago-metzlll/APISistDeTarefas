@@ -8,7 +8,7 @@ export class TasksService {
   private tasks: Task[] = [];
   private idCounter = 1;
 
-  // Criar tarefas manualmente só para teste (o professor não quer POST)
+  
   seedTasks() {
     this.tasks.push(
       { id: this.idCounter++, title: 'Criar API', done: false, role: Role.DEV },
