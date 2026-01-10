@@ -1,2 +1,6 @@
-Este projeto é praticamente uma evolução da newAPINest, já que reutilizamos toda a base do projeto: usamos NestJS, a mesma lógica da arquitetura modular, dos DTO's, pipes, guardas, strategies, bcrypt, tokens e coockies.
-Essa API foi feita para a integração com um sistema gerenciador de tarefas, onde cada pessoa possui um papel e tarefas a serem feitas.Por isso, além das tecnologias usadas acimas, criamos um novo decorador manualmente, o roles.decorator, utilizando um enum, para definir o papel de cada usuário do sistema na pópria API e entregar as tarefas respectivas a ele. 
+Este projeto é uma evolução da newAPINest, já que reaproveita praticamente toda a base do projeto original.
+Mantivemos o uso do NestJS, a mesma arquitetura modular e conceitos como DTOs, pipes, guards, strategies, além de autenticação com bcrypt, tokens e cookies.
+
+A API foi pensada para integrar com um sistema de gerenciamento de tarefas, no qual cada usuário possui um papel específico e tarefas associadas a ele.
+
+Por isso, além das tecnologias já utilizadas, foi criado um decorator customizado (roles.decorator), junto com um enum, para definir os papéis dos usuários diretamente na API e controlar quais tarefas cada um pode acessar.
